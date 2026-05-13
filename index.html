@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futebol PWA - Jogadores</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#000000">
+</head>
+
+<body>
+
+    <header class="parallax-header">
+        <div class="header-content">
+            <h1>WikiPlayers</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="form-section">
+            <h2 id="form-title">Adicione seu Jogador</h2>
+            <form id="player-form">
+                <input type="hidden" id="player-id">
+
+                <div class="input-group">
+                    <label for="name">Nome do Jogador</label>
+                    <input type="text" id="name" placeholder="Digite o nome do Jogador..." required>
+                </div>
+
+                <div class="input-group">
+                    <label for="team">Time</label>
+                    <input type="text" id="team" placeholder="Digite o nome do time..." required>
+                </div>
+
+                <div class="input-group">
+                    <label for="position">Posição</label>
+                    <input type="text" id="position" placeholder="Digite a posição do jogador..." required>
+                </div>
+
+                <div class="input-group">
+                    <label for="goals">Gols Marcados</label>
+                    <input type="number" id="goals" placeholder="Digite a quantidade de gols marcados..." min="0"
+                        required>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" class="btn btn-primary" id="save-btn">Salvar Jogador</button>
+                    <button type="button" class="btn btn-secondary" id="cancel-btn"
+                        style="display: none;">Cancelar</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="list-section">
+            <h2>Lista de Jogadores</h2>
+            <div id="player-list" class="player-grid">
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
