@@ -30,6 +30,7 @@ function renderPlayers() {
     playerList.innerHTML = '';
     const players = getPlayers();
 
+
     if (players.length === 0) {
         playerList.innerHTML = '<p style="color: var(--text-muted);">Nenhum jogador cadastrado ainda.</p>';
         return;
@@ -90,6 +91,7 @@ function deletePlayer(id) {
         renderPlayers();
     }
 }
+
 
 function editPlayer(id) {
     const players = getPlayers();

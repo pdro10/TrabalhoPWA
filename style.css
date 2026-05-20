@@ -126,6 +126,14 @@ body {
 
 .btn-edit { background-color: #ffc107; color: #000; }
 .btn-edit:hover { background-color: #e0a800; }
+#cancel-btn {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+#cancel-btn:hover {
+    background-color: #5a6268;
+}
 
 
 .player-grid {
